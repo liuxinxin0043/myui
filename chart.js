@@ -9,7 +9,7 @@ $(function(){
         {name:'Visual Basic.NET',paim:'6',updown:'降',change:'-1.17%'},
         {name:'JavaScript',paim:'7',updown:'降',change:'-0.85%'}
     ];
-    var hot = new Handsontable($chart.get(0),{
+    var handchart = new Handsontable($chart.get(0),{
         data:data,
         colHeaders:['语言名称','排名','升或降','变化幅度'],
         colWidths:150,
@@ -49,5 +49,5 @@ $(function(){
         }]
     };
     echart.setOption(option);
-    return hot;
+    return handchart;
 })
